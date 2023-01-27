@@ -30,6 +30,6 @@ app.get("*", (req, res) => {
 });
 
 //levantar aplicacion de express, listen(puerto,callback )
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 4001, () => {
   console.log(`Servidor corriendo en puerto ${process.env.PORT}`);
 });
