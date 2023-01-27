@@ -25,9 +25,9 @@ app.use(express.json());
 app.use("/api/auth", require("./routes/auth"));
 
 //manejar rutas del front
-app.get("*", (req, res) => {
+/* app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "public/index.html"));
-});
+}); */
 
 //levantar aplicacion de express, listen(puerto,callback )
 app.listen(process.env.PORT, () => {
